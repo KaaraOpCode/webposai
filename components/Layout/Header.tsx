@@ -1,0 +1,58 @@
+'use client'
+
+import Link from "next/link";
+
+export default function Header() {
+  return (
+    <header className="w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <nav className="flex items-center justify-between h-16">
+          <div className="flex items-center space-x-3">
+            <div className="w-10 h-10 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+              <span className="text-white font-bold text-xl">W</span>
+            </div>
+            <span className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+              WebPOSAI
+            </span>
+          </div>
+          
+          <div className="hidden md:flex items-center space-x-8">
+            <Link 
+              href="/features"
+              className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors"
+            >
+              Features
+            </Link>
+            <Link 
+              href="/pricing"
+              className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors"
+            >
+              Pricing
+            </Link>
+            <Link 
+              href="/demo"
+              className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors"
+            >
+              Demo
+            </Link>
+          </div>
+
+          <div className="flex items-center space-x-4">
+            <Link 
+              href="/login"
+              className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors"
+            >
+              Login
+            </Link>
+            <Link 
+              href="/signup"
+              className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-200 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              Sign Up
+            </Link>
+          </div>
+        </nav>
+      </div>
+    </header>
+  );
+}
