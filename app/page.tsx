@@ -3,7 +3,7 @@
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 import Hero from "@/components/Layout/Hero";
-import Features from "@/components/Layout/Features";
+import Features from "@/components/Features/Features";
 import Stats from "@/components/Layout/Stats";
 
 export default function Home() {

@@ -21,6 +21,7 @@ const roles = ['Admin', 'Cashier', 'AI Assistant'] as const;
 
 // Modular Components
 const NavButton = ({ icon: Icon, label, variant = 'default', onClick }: {
+
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   icon: any;
   label: string;
